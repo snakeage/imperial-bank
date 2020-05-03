@@ -23,15 +23,21 @@ const ContainerMedia = css`
 
 export const FooterContainer = styled.div`
   display: flex;
-  height: 150px;
+  min-height: 150px;
   width: 100%;
   background-color: #edf0f5;
-  /* position: absolute; */
-  /* margin-bottom: auto; */
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const LinkContainer = styled.div`
   ${ContainerMedia}
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const Links = styled(Link)`
@@ -44,6 +50,10 @@ export const MediaContainet = styled.div`
   ${ContainerMedia}
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const ImageContainerVk = styled(VkIconSVG)`

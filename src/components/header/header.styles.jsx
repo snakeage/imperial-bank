@@ -29,7 +29,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     top: 0;
-    /* left: -100%; */
+    left: -100%;
     width: 50%;
     height: 100vh;
     padding: 20px 15px;

@@ -12,22 +12,12 @@ export const ProductItemContainer = styled.div`
   border: none;
   flex-direction: column;
   &:hover {
-    /* cursor: pointer;
-		& .background-image {
-			transform: scale(1.1);
-			transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-		} */
+   
     & .content {
       opacity: 0.95;
     }
   }
-  /* &:first-child {
-    margin-right: 7.5px;
-  }
-  &:last-child {
-    margin-left: 7.5px;
-  } */
-
+  
   @keyframes heartbeat {
     from {
         transform: scale(1);
@@ -39,6 +29,12 @@ export const ProductItemContainer = styled.div`
         transform: scale(1);
     }
   }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 15px;
+  }
 `;
 
 export const ImageContainer = styled.img`
@@ -48,11 +44,6 @@ export const ImageContainer = styled.img`
   width: 50px;
   left: 40px;
   animation: heartbeat 3.5s ease infinite;
-
-    
-  /* background-size: cover;
-  background-position: center; */
-  /* background-image: ${({ imageUrl }) => `url(${imageUrl})`}; */
 `;
 
 export const ContentContainer = styled.div`
@@ -61,16 +52,7 @@ export const ContentContainer = styled.div`
   margin-left: 25px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* border: 1px solid black; */
-  /* background-color: white; */
   opacity: 0.9;
-  /* position: absolute; */
-
-  button {
-    
-  }
 `;
 
 export const ContentTitle = styled.span`
