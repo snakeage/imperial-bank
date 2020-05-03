@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/imperial-bank/static/css/main.d1b05096.chunk.css",
-    "main.js": "/imperial-bank/static/js/main.511f0793.chunk.js",
-    "main.js.map": "/imperial-bank/static/js/main.511f0793.chunk.js.map",
+    "main.css": "/imperial-bank/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/imperial-bank/static/js/main.051149d6.chunk.js",
+    "main.js.map": "/imperial-bank/static/js/main.051149d6.chunk.js.map",
     "runtime-main.js": "/imperial-bank/static/js/runtime-main.5c73f455.js",
     "runtime-main.js.map": "/imperial-bank/static/js/runtime-main.5c73f455.js.map",
-    "static/js/2.c762393a.chunk.js": "/imperial-bank/static/js/2.c762393a.chunk.js",
-    "static/js/2.c762393a.chunk.js.map": "/imperial-bank/static/js/2.c762393a.chunk.js.map",
+    "static/js/2.f2f1b874.chunk.js": "/imperial-bank/static/js/2.f2f1b874.chunk.js",
+    "static/js/2.f2f1b874.chunk.js.map": "/imperial-bank/static/js/2.f2f1b874.chunk.js.map",
     "index.html": "/imperial-bank/index.html",
-    "precache-manifest.3ad73d97e69966b42265d7ad8661321d.js": "/imperial-bank/precache-manifest.3ad73d97e69966b42265d7ad8661321d.js",
+    "precache-manifest.3aabff43efaef7db6eab6907037d6e6b.js": "/imperial-bank/precache-manifest.3aabff43efaef7db6eab6907037d6e6b.js",
     "service-worker.js": "/imperial-bank/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/imperial-bank/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.c762393a.chunk.js.LICENSE.txt": "/imperial-bank/static/js/2.c762393a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/imperial-bank/static/media/logo.5d5d9eef.svg"
+    "static/css/main.5ecd60fb.chunk.css.map": "/imperial-bank/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.f2f1b874.chunk.js.LICENSE.txt": "/imperial-bank/static/js/2.f2f1b874.chunk.js.LICENSE.txt",
+    "static/media/Instagram-logo.04f1d872.svg": "/imperial-bank/static/media/Instagram-logo.04f1d872.svg",
+    "static/media/applepay-logo.40df6c42.svg": "/imperial-bank/static/media/applepay-logo.40df6c42.svg",
+    "static/media/crown.ed28accb.svg": "/imperial-bank/static/media/crown.ed28accb.svg",
+    "static/media/facebook-logo.422e7665.svg": "/imperial-bank/static/media/facebook-logo.422e7665.svg",
+    "static/media/twitter-logo.7e145c9e.svg": "/imperial-bank/static/media/twitter-logo.7e145c9e.svg",
+    "static/media/vk-logo.b1413650.svg": "/imperial-bank/static/media/vk-logo.b1413650.svg",
+    "static/media/youtube-logo.ce7a4bd3.svg": "/imperial-bank/static/media/youtube-logo.ce7a4bd3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5c73f455.js",
-    "static/js/2.c762393a.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.511f0793.chunk.js"
+    "static/js/2.f2f1b874.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.051149d6.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/imperial-bank/precache-manifest.3ad73d97e69966b42265d7ad8661321d.js"
+  "/imperial-bank/precache-manifest.3aabff43efaef7db6eab6907037d6e6b.js"
 );
 
 self.addEventListener('message', (event) => {
