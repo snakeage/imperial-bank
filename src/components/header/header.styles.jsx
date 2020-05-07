@@ -1,5 +1,44 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { selectHeaderHidden } from '../../redux/header/header.selectors';
+
+const menuActive = css`
+  left: 0%;
+`;
+const menu = css`
+  left: -10%;
+`;
+
+const hamburgerActive = css`
+  margin-bottom: -2px;
+  &:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  &:nth-child(2) {
+    display: none;
+  }
+  &:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+`;
+
+const gethamburgerActive = ({ hiddenMenu }) => {
+  return hiddenMenu ? null : hamburgerActive;
+};
+
+const getMenuActive = ({ hiddenMenu }) => {
+  return hiddenMenu ? null : menuActive;
+};
+
+// const mapStateToProps = createStructuredSelector({
+//   hidden: selectHeaderHidden,
+// });
+
+// connect(mapStateToProps)(getMenuActive);
 
 export const HeaderContainer = styled.div`
   height: 120px;
@@ -36,6 +75,7 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.6s all;
     z-index: 2;
+    ${getMenuActive}
   }
 `;
 
@@ -112,6 +152,8 @@ export const Divider = styled.div`
 `;
 
 export const Hamburger = styled.div`
+
+@media screen and (max-width: 800px) {
   display: block;
   position: absolute;
   right: 10px;
@@ -119,6 +161,7 @@ export const Hamburger = styled.div`
   transform: translateY(-50%);
   width: 26px;
   height: 12px;
+}
 `;
 
 export const HamburgerSpan = styled.span`
@@ -128,4 +171,5 @@ export const HamburgerSpan = styled.span`
   background-color: #fff;
   margin-bottom: 2px;
   transition: 0.5s all;
+  ${gethamburgerActive}
 `;

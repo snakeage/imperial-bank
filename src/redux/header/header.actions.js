@@ -16,3 +16,7 @@ export const toggleItemHiddenDeposit = () => ({
 export const toggleItemHiddenInvestments = () => ({
   type: HeaderActionTypes.TOGGLE_HEADER_ITEM_HIDDEN_INVESTMENTS,
 });
+
+export const toggleItemHiddenMenu = () => ({
+  type: HeaderActionTypes.TOGGLE_HEADER_ITEM_HIDDEN_MENU,
+});

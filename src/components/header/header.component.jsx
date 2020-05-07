@@ -16,6 +16,7 @@ import {
   selectHeaderHiddenMortage,
   selectHeaderHiddenDeposit,
   selectHeaderHiddenInvestments,
+  selectHeaderHiddenMenu,
   selectHeaderItems,
 } from '../../redux/header/header.selectors';
 
@@ -25,6 +26,7 @@ import {
   toggleItemHiddenMortage,
   toggleItemHiddenDeposit,
   toggleItemHiddenInvestments,
+  toggleItemHiddenMenu,
 } from '../../redux/header/header.actions';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
@@ -48,23 +50,25 @@ const Header = ({
   hiddenMortage,
   hiddenDeposit,
   hiddenInvestments,
+  hiddenMenu,
   headerItems,
   toggleItemHidden,
   toggleItemHiddenLoan,
   toggleItemHiddenMortage,
   toggleItemHiddenDeposit,
   toggleItemHiddenInvestments,
+  toggleItemHiddenMenu,
 }) => (
   <HeaderContainer>
     <LogoContainer to="/">
       <Logo className="logo" />
     </LogoContainer>
-    <Hamburger>
-      <HamburgerSpan></HamburgerSpan>
-      <HamburgerSpan></HamburgerSpan>
-      <HamburgerSpan></HamburgerSpan>
+    <Hamburger onClick={toggleItemHiddenMenu}>
+      <HamburgerSpan hiddenMenu={hiddenMenu}></HamburgerSpan>
+      <HamburgerSpan hiddenMenu={hiddenMenu}></HamburgerSpan>
+      <HamburgerSpan hiddenMenu={hiddenMenu}></HamburgerSpan>
     </Hamburger>
-    <Container>
+    <Container hiddenMenu={hiddenMenu}>
       <OptionsContainer>
         <OptionLink to="/header-option">Частным клиентам</OptionLink>
         <OptionLink to="/header-option">Малый бизнес и ИП</OptionLink>
@@ -106,6 +110,7 @@ const mapDispatchToProps = (dispatch) => ({
   toggleItemHiddenMortage: () => dispatch(toggleItemHiddenMortage()),
   toggleItemHiddenDeposit: () => dispatch(toggleItemHiddenDeposit()),
   toggleItemHiddenInvestments: () => dispatch(toggleItemHiddenInvestments()),
+  toggleItemHiddenMenu: () => dispatch(toggleItemHiddenMenu()),
 });
 
 const mapStateToProps = createStructuredSelector({
@@ -115,6 +120,7 @@ const mapStateToProps = createStructuredSelector({
   hiddenLoan: selectHeaderHiddenLoan,
   hiddenMortage: selectHeaderHiddenMortage,
   hiddenDeposit: selectHeaderHiddenDeposit,
+  hiddenMenu: selectHeaderHiddenMenu,
   hiddenInvestments: selectHeaderHiddenInvestments,
 });
 

@@ -24,6 +24,11 @@ export const selectHeaderHiddenInvestments = createSelector(
   (header) => header.hiddenInvestments
 );
 
+export const selectHeaderHiddenMenu = createSelector(
+  [selectHeader],
+  (header) => header.hiddenMenu
+);
+
 export const selectHeaderItems = createSelector(
   [selectHeader],
   (header) => header.headerItems
