@@ -70,27 +70,27 @@ const Header = ({
     </Hamburger>
     <Container hiddenMenu={hiddenMenu}>
       <OptionsContainer>
-        <OptionLink to="/header-option">Частным клиентам</OptionLink>
-        <OptionLink to="/header-option">Малый бизнес и ИП</OptionLink>
-        <OptionLink to="/header-option">Средний и крупный бизнес</OptionLink>
-        <OptionLink to="/header-option">Финансовым организациям</OptionLink>
-        <OptionLink to="/header-option">Клуб</OptionLink>
-        <OptionLink to="/header-option">Инвестбанк</OptionLink>
+        <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Частным клиентам</OptionLink>
+        <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Малый бизнес и ИП</OptionLink>
+        <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Средний и крупный бизнес</OptionLink>
+        <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Финансовым организациям</OptionLink>
+        <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Клуб</OptionLink>
+        <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Инвестбанк</OptionLink>
         {currentUser ? (
           <OptionLink as="div" onClick={() => auth.signOut()}>
             {currentUser.displayName} (Выйти)
           </OptionLink>
         ) : (
-          <OptionLink to="/signin">Интернет-банк</OptionLink>
+          <OptionLink to="/signin" onClick={toggleItemHiddenMenu}>Интернет-банк</OptionLink>
         )}
       </OptionsContainer>
       <Divider />
       <OptionsContainer>
-        <OptionLinkSub onClick={toggleItemHidden}>Карты</OptionLinkSub>
-        <OptionLinkSub onClick={toggleItemHiddenLoan}>Кредиты</OptionLinkSub>
-        <OptionLinkSub onClick={toggleItemHiddenMortage}>Ипотека</OptionLinkSub>
-        <OptionLinkSub onClick={toggleItemHiddenDeposit}>Вклады</OptionLinkSub>
-        <OptionLinkSub onClick={toggleItemHiddenInvestments}>
+        <OptionLinkSub as="div" onClick={toggleItemHidden}>Карты</OptionLinkSub>
+        <OptionLinkSub as="div" onClick={toggleItemHiddenLoan}>Кредиты</OptionLinkSub>
+        <OptionLinkSub as="div" onClick={toggleItemHiddenMortage}>Ипотека</OptionLinkSub>
+        <OptionLinkSub as="div" onClick={toggleItemHiddenDeposit}>Вклады</OptionLinkSub>
+        <OptionLinkSub as="div" onClick={toggleItemHiddenInvestments}>
           Инвестиции
         </OptionLinkSub>
       </OptionsContainer>

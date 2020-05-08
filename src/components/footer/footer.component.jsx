@@ -16,17 +16,17 @@ import {
 const Footer = () => (
   <FooterContainer>
     <LinkContainer>
-      <Links>О банке</Links>
-      <Links>Вакансии</Links>
-      <Links>Реквизиты</Links>
-      <Links>Пресс-служба</Links>
-      <Links>Тариф и документы</Links>
-      <Links>Иностранным гражданам</Links>
-      <Links>Тендерный комитет</Links>
-      <Links>Скидки по картам</Links>
-      <Links>Imperial-обучение</Links>
-      <Links>Обратная связь</Links>
-      <Links>Карта сайта</Links>
+      <Links to="/info">О банке</Links>
+      <Links to="/info">Вакансии</Links>
+      <Links to="/info">Реквизиты</Links>
+      <Links to="/info">Пресс-служба</Links>
+      <Links to="/info">Тариф и документы</Links>
+      <Links to="/info">Иностранным гражданам</Links>
+      <Links to="/info">Тендерный комитет</Links>
+      <Links to="/info">Скидки по картам</Links>
+      <Links to="/info">Imperial-обучение</Links>
+      <Links to="/info">Обратная связь</Links>
+      <Links to="/info">Карта сайта</Links>
     </LinkContainer>
     <MediaContainet>
       <ImageContainerVk />

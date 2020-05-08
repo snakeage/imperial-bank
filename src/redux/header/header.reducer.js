@@ -60,6 +60,7 @@ const headerReducer = (state = INITIAL_STATE, action) => {
         hidden: true,
         hiddenLoan: true,
         hiddenMortage: true,
+        hiddenDeposit: true,
       };
     case HeaderActionTypes.TOGGLE_HEADER_ITEM_HIDDEN_MENU:
       return {
@@ -69,6 +70,7 @@ const headerReducer = (state = INITIAL_STATE, action) => {
         hiddenLoan: true,
         hiddenMortage: true,
         hiddenInvestments: true,
+        hiddenDeposit: true,
       };
     default:
       return state;

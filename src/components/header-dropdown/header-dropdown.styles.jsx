@@ -26,12 +26,12 @@ export const HeaderDropDownContainer = styled.div`
   opacity: 0.9;
 
   @media screen and (max-width: 800px) {
-    /* height: 800px; */
+    position: fixed;
+    margin-left: 48%;
     width: 50%;
     padding: 5px;
     overflow: scroll;
     flex-direction: column;
-    margin-left: 53%;
     top: 0px;
   }
 `;

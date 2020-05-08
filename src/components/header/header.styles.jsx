@@ -1,16 +1,8 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-
-import { selectHeaderHidden } from '../../redux/header/header.selectors';
-
 const menuActive = css`
   left: 0%;
-`;
-const menu = css`
-  left: -10%;
 `;
 
 const hamburgerActive = css`
@@ -33,12 +25,6 @@ const gethamburgerActive = ({ hiddenMenu }) => {
 const getMenuActive = ({ hiddenMenu }) => {
   return hiddenMenu ? null : menuActive;
 };
-
-// const mapStateToProps = createStructuredSelector({
-//   hidden: selectHeaderHidden,
-// });
-
-// connect(mapStateToProps)(getMenuActive);
 
 export const HeaderContainer = styled.div`
   height: 120px;
