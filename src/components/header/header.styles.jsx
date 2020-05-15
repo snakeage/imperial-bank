@@ -101,9 +101,10 @@ export const OptionLink = styled(Link)`
   }
 
   &:last-child {
-    margin-left: 60px;
+    /* margin-left: 60px; */
     font-size: 16px;
     font-weight: bold;
+    margin-left: auto;
   }
 
   @media screen and (max-width: 800px) {

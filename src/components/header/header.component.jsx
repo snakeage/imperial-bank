@@ -78,7 +78,7 @@ const Header = ({
         <OptionLink to="/header-option" onClick={toggleItemHiddenMenu}>Инвестбанк</OptionLink>
         {currentUser ? (
           <OptionLink as="div" onClick={() => auth.signOut()}>
-            {currentUser.displayName} (Выйти)
+            {currentUser.displayName}
           </OptionLink>
         ) : (
           <OptionLink to="/signin" onClick={toggleItemHiddenMenu}>Интернет-банк</OptionLink>
