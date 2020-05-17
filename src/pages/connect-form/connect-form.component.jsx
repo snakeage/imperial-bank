@@ -3,6 +3,7 @@ import React from 'react';
 import FormInput from '../../components/form-input/form-input.component';
 import FormInputCheckBox from '../../components/form-input-checkbox/form-input-checkbox.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
+import Modal from '../../components/modal/modal.component';
 
 import {
   ConnectFormContainer,
@@ -11,9 +12,6 @@ import {
   ContactCaonainer,
   ButtonContainer,
   ImageContainer,
-  ModalContainer,
-  CloseContainer,
-  OpacityContainer,
 } from './connect-form.styles';
 
 class ConnectForm extends React.Component {
@@ -26,7 +24,7 @@ class ConnectForm extends React.Component {
       phone: '',
       email: '',
       checkbox: false,
-      modalHidden: true,
+      modalHidden: false,
     };
   }
 
@@ -125,18 +123,7 @@ class ConnectForm extends React.Component {
             <CustomButton type="submit">Продолжить</CustomButton>
           </ButtonContainer>
         </form>
-        {modalHidden ? null : (
-          <ModalContainer>
-          <OpacityContainer></OpacityContainer>
-          <CloseContainer onClick={this.handleSubmitModal}>
-          &#10060;
-          </CloseContainer>
-          <TextContainer>
-          Мы с Вами свяжемся в течении 10 минут.
-          </TextContainer>
-          </ModalContainer>
-          
-          )}
+        {modalHidden ? null : <Modal closeModal={this.handleSubmitModal} />}
       </ConnectFormContainer>
     );
   }
