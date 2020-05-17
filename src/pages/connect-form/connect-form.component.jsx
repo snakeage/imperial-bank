@@ -24,7 +24,7 @@ class ConnectForm extends React.Component {
       phone: '',
       email: '',
       checkbox: false,
-      modalHidden: false,
+      modalHidden: true,
     };
   }
 
